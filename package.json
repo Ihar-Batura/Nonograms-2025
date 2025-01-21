@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "format": "npx prettier --write .",
+    "ci:format": "npx prettier --check .",
+    "lint": "npx eslint src/**/*.js",
     "prepare": "husky"
   },
   "devDependencies": {
