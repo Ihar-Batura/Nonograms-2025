@@ -1,10 +1,9 @@
 @use '../abstracts/variables' as *;
 
 .btn {
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 5px 16px;
   border: none;
-
   cursor: pointer;
   transition: all $transition;
 
@@ -18,25 +17,20 @@
   }
 }
 
-.btn {
-  &.header-btn {
-    border: 2px solid transparent;
-    &:hover {
-      border: 2px solid red;
-    }
+.header-btn {
+  padding: 0;
+  color: $color-header-btn-light;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  &.active {
+    border-bottom: 2px solid $color-header-btn-light;
   }
-
-  &.about-container__btn-return {
-    border: 2px solid $color-background;
-    &:hover {
-      box-shadow: 0px 0px 15px 1px $color-background;
-    }
+  &:hover {
+    border-bottom: 2px solid $color-header-btn-light;
   }
-
-  &.form-btn {
-    border: 2px solid $color-background;
-    &:hover {
-      box-shadow: 0px 0px 15px 1px $color-background;
-    }
+  &:active {
+    color: $color-header-btn-light-click;
+    border-bottom: 2px solid $color-header-btn-light-click;
   }
 }

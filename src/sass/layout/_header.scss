@@ -1,6 +1,12 @@
 @use '../abstracts/variables' as *;
 
 .header {
-  padding: 5px 0;
-  background-color: $color-background;
+  width: 100%;
+  background-color: $color-background-light;
+  border-bottom: 3px solid $color-border-light;
+}
+
+.header-logo {
+  text-align: center;
+  margin-bottom: 10px;
 }

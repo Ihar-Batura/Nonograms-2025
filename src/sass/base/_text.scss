@@ -1,7 +1,8 @@
 @use '../abstracts/variables' as *;
 
 h1 {
-  font-size: 20px;
+  font-size: 27px;
+  font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.05em;
 }
@@ -9,21 +10,16 @@ h1 {
 h2 {
   font-size: 18px;
   letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 h3 {
   font-size: 14px;
   letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 h4 {
   font-size: 17px;
   letter-spacing: 0.03em;
-  text-transform: none;
 }
 
 p {

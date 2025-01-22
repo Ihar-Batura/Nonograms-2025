@@ -1,9 +1,18 @@
 @use '../abstracts/variables' as *;
 
 .footer {
-  display: flex;
-  align-items: center;
-  height: 55px;
-  padding: 5px 0;
-  background-color: $color-background;
+  background-color: $color-background-light;
+  border-top: 3px solid $color-border-light;
+}
+
+.footer-year {
+  font-weight: 700;
+}
+
+.footer-link {
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition;
+  color: $color-text;
 }

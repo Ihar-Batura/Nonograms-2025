@@ -1,13 +1,16 @@
 // Fonts
 $font-main: 'Libre Baskerville', serif;
-$font-additional: 'Caveat', serif;
 
 // Colors
-$color-background: #71a7f3;
+$color-background-light: #f7b680;
+$color-body-background-light: #efe5dd;
+$color-header-btn-light: #5d0606;
+$color-header-btn-light-click: #240202;
+$color-border-light: #8d1d06;
 $color-text: #242f47;
 
 // Padding
-$padding-wrapper: 0 20px;
+$padding-wrapper: 10px 20px;
 
 //Transition
 $transition: 0.5s ease-out;
