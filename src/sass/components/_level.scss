@@ -1,0 +1,124 @@
+@use '../abstracts/variables' as *;
+
+.level {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.level-description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.levels-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.level-card {
+  border-radius: 4px;
+  background-color: $color-level-card-bk-light;
+  cursor: pointer;
+  transition: all $transition;
+  &:hover {
+    background-color: $color-background-light;
+  }
+}
+
+.level-card__img {
+  width: 87px;
+  height: 87px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.level-card__name {
+  text-align: center;
+  font-weight: 700;
+  padding: 2px 0;
+}
+
+.level-card__img-watch {
+  background-image: url(/watch.png);
+}
+
+.level-card__img-propeller {
+  background-image: url(/propeller.png);
+}
+
+.level-card__img-heart {
+  background-image: url(/heart.png);
+}
+
+.level-card__img-fountain {
+  background-image: url(/watch.png);
+}
+
+.level-card__img-fountain {
+  background-image: url(/fountain.png);
+}
+
+.level-card__img-camel {
+  background-image: url(/camel.png);
+}
+
+.level-card__img-cup {
+  background-image: url(/cup.png);
+}
+
+.level-card__img-spider {
+  background-image: url(/spider.png);
+}
+
+.level-card__img-kettle {
+  background-image: url(/kettle.png);
+}
+
+.level-card__img-hamster {
+  background-image: url(/hamster.png);
+}
+
+.level-card__img-crab {
+  background-image: url(/crab.png);
+}
+
+.level-card__img-crown {
+  background-image: url(/crown.png);
+}
+
+.level-card__img-portrait {
+  background-image: url(./portrait.png);
+}
+
+.level-card__img-operator {
+  background-image: url(/operator.png);
+}
+
+.level-card__img-camera {
+  background-image: url(/camera.png);
+}
+
+.level-card__img-lion {
+  background-image: url(/lion.png);
+}
+
+@media (width < 500px) {
+  .level-description {
+    font-size: 16px;
+  }
+
+  .level-card__img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .level-card__name {
+    font-size: 14px;
+  }
+}

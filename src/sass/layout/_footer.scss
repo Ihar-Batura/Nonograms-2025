@@ -1,6 +1,9 @@
 @use '../abstracts/variables' as *;
 
 .footer {
+  display: flex;
+  align-items: center;
+  height: 55px;
   background-color: $color-background-light;
   border-top: 3px solid $color-border-light;
 }

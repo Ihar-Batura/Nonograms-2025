@@ -8,6 +8,8 @@
 @use 'layout/wrapper' as *;
 @use 'layout/main' as *;
 @use 'layout/footer' as *;
+@use 'layout/select_level' as *;
 
 @use 'components/buttons' as *;
 @use 'components/navigation' as *;
+@use 'components/level' as *;
