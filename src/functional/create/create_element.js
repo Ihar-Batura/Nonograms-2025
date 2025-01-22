@@ -1,5 +1,5 @@
 function createElement(options) {
-  const { tag = 'div', classes = [], id = '', text = '', parent } = options;
+  const { tag = 'div', classes = [], id, text, parent } = options;
 
   const element = document.createElement(tag);
 

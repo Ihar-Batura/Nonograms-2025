@@ -1,5 +1,4 @@
 import createElement from '../functional/create/create_element';
-import createNavigation from '../components/navigation';
 
 function createHeader() {
   const header = createElement({ tag: 'header', classes: ['header'] });
@@ -15,11 +14,6 @@ function createHeader() {
     text: 'Nonograms',
     parent: wrapper,
   });
-
-  const headerButtons = createNavigation();
-  {
-    header.append(headerButtons);
-  }
 
   return header;
 }

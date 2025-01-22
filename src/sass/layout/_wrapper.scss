@@ -1,20 +1,26 @@
 @use '../abstracts/variables' as *;
 
 .wrapper {
-  display: flex;
-  align-items: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: $padding-wrapper;
 }
 
-.header-wrapper,
+.header-wrapper {
+}
 .footer-wrapper {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .main-wrapper {
-  justify-content: center;
   min-height: calc(100vh - 140px);
+}
+
+@media (width < 530px) {
+  .main-wrapper {
+    padding: $padding-wrapper-small;
+  }
 }
