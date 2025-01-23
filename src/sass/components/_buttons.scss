@@ -34,3 +34,11 @@
     border-bottom: 2px solid $color-header-btn-light-click;
   }
 }
+
+.play-btn {
+  width: 195px;
+  background-color: $color-level-card-bk-light;
+  &:hover {
+    background-color: $color-background-light;
+  }
+}

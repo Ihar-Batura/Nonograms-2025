@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.play-control {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  span {
+    font-size: 18px;
+  }
+}
