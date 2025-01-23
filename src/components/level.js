@@ -1,5 +1,8 @@
 import createElement from '../functional/create/create_element';
 import { nonograms } from '../data/nonograms';
+import removeClassFromAllElements from '../functional/clean/remove_class_from_all_elements';
+import cleanMainContent from '../functional/clean/clean_main_content';
+import goToPlayPage from '../functional/change_page/go_to_play_page';
 
 function createLevel(startId, description) {
   const levelContainer = createElement({ tag: 'div', classes: ['level'] });
@@ -25,6 +28,14 @@ function createLevel(startId, description) {
       tag: 'div',
       classes: ['level-card'],
       id: `${cardId}`,
+    });
+
+    levelCard.addEventListener('click', (e) => {
+      const cardId = e.target.parentNode.id;
+      removeClassFromAllElements('nav-btn', 'active');
+      cleanMainContent();
+      goToPlayPage(cardId);
+      console.log(cardId);
     });
 
     createElement({
