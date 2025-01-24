@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as *;
+
+.score-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto 25px;
+  border-spacing: 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 2px $color-border-light;
+}
+
+.table-head {
+  background-color: $color-background-light;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.table-head__header:nth-child(1) {
+  border-top-left-radius: 4px;
+}
+.table-head__header:nth-child(3) {
+  border-top-right-radius: 4px;
+}
+
+.table-head__header {
+  width: 33%;
+  height: 40px;
+  text-align: start;
+  font-size: 18px;
+  letter-spacing: 0.03rem;
+  padding: 6px 12px;
+}
+
+.table-body__row:nth-child(2n) {
+  .table-body__cell {
+    background-color: $color-level-card-bk-light;
+  }
+}
+
+.table-body__cell {
+  width: 33%;
+  height: 36px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  padding: 6px 12px;
+}
