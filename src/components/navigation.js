@@ -2,6 +2,7 @@ import createElement from '../functional/create/create_element';
 import createButton from '../functional/create/create_button';
 import goToPageSelectLevel from '../functional/change_page/go_to_page_select_level';
 import startRandomGame from '../functional/game/start_random_game';
+import goToPageScoreTable from '../functional/change_page/go_to_page_score_table';
 
 function createNavigation() {
   const navContainer = createElement({
@@ -24,11 +25,7 @@ function createNavigation() {
   createButton({
     classes: ['btn', 'nav-btn', 'nav-btn__score-table'],
     text: 'Score table',
-    parent: navContainer,
-  });
-  createButton({
-    classes: ['btn', 'nav-btn', 'nav-btn__change-theme'],
-    text: 'Change theme',
+    onClick: (e) => goToPageScoreTable(e),
     parent: navContainer,
   });
 
