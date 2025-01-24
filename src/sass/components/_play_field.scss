@@ -50,6 +50,7 @@
   color: black;
   font-size: 10px;
   border: 1px solid black;
+  user-select: none;
   cursor: pointer;
 
   &.fill {
