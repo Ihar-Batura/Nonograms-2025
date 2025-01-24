@@ -1,3 +1,5 @@
+import saveWinResultToLS from './save_win_result_to_LS';
+
 function checkWin() {
   const cells = document.querySelectorAll('.cell');
   let count = 0;
@@ -14,6 +16,7 @@ function checkWin() {
   });
   if (count === 0) {
     console.log('you win');
+    saveWinResultToLS();
   }
 }
 
