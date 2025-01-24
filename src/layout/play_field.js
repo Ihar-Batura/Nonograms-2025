@@ -2,7 +2,11 @@ import createElement from '../functional/create/create_element';
 import { nonograms } from '../data/nonograms';
 
 function createPlayField(id) {
-  const playField = createElement({ tag: 'div', classes: ['play-field'] });
+  const playField = createElement({
+    tag: 'div',
+    classes: ['play-field'],
+    id: id,
+  });
   const game = nonograms[id - 1].matrix;
 
   if (game.length === 5) {
