@@ -11,7 +11,7 @@ function createNavigation() {
   });
 
   createButton({
-    classes: ['btn', 'nav-btn', 'nav-btn__select-level', 'active'],
+    classes: ['btn', 'nav-btn', 'nav-btn__select-level'],
     text: 'Select level',
     onClick: (e) => goToPageSelectLevel(e),
     parent: navContainer,
