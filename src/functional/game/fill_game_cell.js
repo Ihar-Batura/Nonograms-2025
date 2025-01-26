@@ -1,3 +1,5 @@
+import { playSoundFillCell, playSoundClearCell } from './sound';
+
 import checkWin from './chech_win';
 
 function fillGameCell() {
@@ -10,9 +12,9 @@ function fillGameCell() {
       checkWin();
 
       if (cell.classList.value.includes('fill')) {
-        //playSoundFillCell(); // звук при закрашивании
+        playSoundFillCell();
       } else {
-        //playSoundClearCell(); // звук при очистки ячейки
+        playSoundClearCell();
       }
     })
   );
