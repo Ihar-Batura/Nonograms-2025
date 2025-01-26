@@ -1,4 +1,5 @@
 import createElement from '../functional/create/create_element';
+import createSoundAndThemeBtns from '../components/sound_and_theme_btns';
 
 function createHeader() {
   const header = createElement({ tag: 'header', classes: ['header'] });
@@ -14,6 +15,9 @@ function createHeader() {
     text: 'Nonograms',
     parent: wrapper,
   });
+
+  const soundAndThemeBtns = createSoundAndThemeBtns();
+  wrapper.append(soundAndThemeBtns);
 
   return header;
 }
