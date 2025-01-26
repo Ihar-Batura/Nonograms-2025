@@ -1,3 +1,5 @@
+import { playSoundCrossCell, playSoundClearCell } from './sound';
+
 function markGameCell() {
   const cells = document.querySelectorAll('.cell');
 
@@ -7,9 +9,9 @@ function markGameCell() {
       cell.classList.remove('fill');
       cell.classList.toggle('cross');
       if (cell.classList.value.includes('cross')) {
-        //playSoundCrossCell(); // звук при перечеркивании ячейки
+        playSoundCrossCell();
       } else {
-        //playSoundClearCell(); // звук при очистки ячейки
+        playSoundClearCell();
       }
     })
   );
