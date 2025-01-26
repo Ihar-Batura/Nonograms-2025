@@ -42,3 +42,37 @@
     background-color: $color-background-light;
   }
 }
+
+.header-btns {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $transition;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btn-sound {
+  background-image: url(/audio.svg);
+  &.mute {
+    background-image: url(/mute.svg);
+  }
+}
+
+.btn-theme {
+  background-image: url(/sun.svg);
+  &.dark {
+    background-image: url(/moon.svg);
+  }
+}
+
+@media (width < 450px) {
+  .header-btns {
+    width: 25px;
+    height: 25px;
+  }
+}
