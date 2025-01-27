@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+.win-message__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+}
+
+.win-message__container-text {
+  text-align: center;
+}
+
+.win-message__container-picture {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
