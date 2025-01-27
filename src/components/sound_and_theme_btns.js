@@ -1,6 +1,7 @@
 import createElement from '../functional/create/create_element';
 import createButton from '../functional/create/create_button';
 import { turnSound } from '../functional/game/sound';
+import changeTheme from '../functional/game/change_theme';
 
 function createSoundAndThemeBtns() {
   const btnsContainer = createElement({
@@ -15,6 +16,7 @@ function createSoundAndThemeBtns() {
   });
   createButton({
     classes: ['header-btns', 'btn-theme'],
+    onClick: () => changeTheme(),
     parent: btnsContainer,
   });
 
