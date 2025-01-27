@@ -3,6 +3,7 @@ function resetGame() {
   gameCells.forEach((cell) => {
     cell.classList.remove('fill');
     cell.classList.remove('cross');
+    cell.classList.remove('solution');
   });
 }
 

@@ -6,12 +6,14 @@ function markGameCell() {
   cells.forEach((cell) =>
     cell.addEventListener('contextmenu', (e) => {
       e.preventDefault();
-      cell.classList.remove('fill');
-      cell.classList.toggle('cross');
-      if (cell.classList.value.includes('cross')) {
-        playSoundCrossCell();
-      } else {
-        playSoundClearCell();
+      if (!cell.classList.value.includes('solution')) {
+        cell.classList.remove('fill');
+        cell.classList.toggle('cross');
+        if (cell.classList.value.includes('cross')) {
+          playSoundCrossCell();
+        } else {
+          playSoundClearCell();
+        }
       }
     })
   );

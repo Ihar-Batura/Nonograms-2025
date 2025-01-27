@@ -42,9 +42,12 @@ function startTimer(startMinutes = 0, startSeconds = 0) {
     cell.addEventListener('click', function () {
       if (!flagTimer) {
         // не затормаживает таймер при повторном клике
-        clearInterval(interval); //не дает ускоряться интервалу!
-        interval = setInterval(startTime, 1000);
-        flagTimer = true;
+        // проверка на показынное решение что бы устранить баг
+        if (!cell.classList.value.includes('solution')) {
+          clearInterval(interval); //не дает ускоряться интервалу!
+          interval = setInterval(startTime, 1000);
+          flagTimer = true;
+        }
       }
     })
   );

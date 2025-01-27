@@ -49,9 +49,9 @@ function saveGame() {
 
   lastGame.push(array);
 
-  console.log(lastGame);
-
-  localStorage.setItem('NGLastGame', JSON.stringify(lastGame));
+  if (!gameCells[0].classList.value.includes('solution')) {
+    localStorage.setItem('NGLastGame', JSON.stringify(lastGame));
+  } // устранил баг, добавил проверку на показанное решение!
 
   // логика - проходимся по ячейкам, у каждой ячейки может быть три состояния в зависимости от содержимого ячейки. Создаем массив, после при отрисовке изменяем значение и добавляем нужный класс для стилий
 }
