@@ -1,0 +1,99 @@
+@use '../abstracts/variables' as *;
+
+.dark-style {
+  color: $color-text-dark;
+
+  .header {
+    background-color: $color-background-dark;
+    border-bottom: 3px solid $color-border-dark;
+  }
+  .btn-sound {
+    background-image: url(/audio-dark.svg);
+    &.mute {
+      background-image: url(/mute-dark.svg);
+    }
+  }
+
+  .main {
+    color: $color-background-dark;
+    background-color: $color-main-background-dark;
+  }
+
+  .nav-btn {
+    color: $color-nav-btn-dark;
+    &.active {
+      border-bottom: 2px solid $color-nav-btn-dark;
+    }
+    &:hover {
+      // для декстопа будет ховер для мобилбного устройства нет
+      @media (hover: hover) {
+        border-bottom: 2px solid $color-nav-btn-dark;
+      }
+    }
+    &:active {
+      color: $color-nav-btn-dark-click;
+      border-bottom: 2px solid $color-nav-btn-dark-click;
+    }
+  }
+
+  .level-description {
+    color: $color-border-dark;
+  }
+
+  .level-card {
+    background-color: $color-text-dark;
+    &:hover {
+      // для декстопа будет ховер для мобилбного устройства нет
+      @media (hover: hover) {
+        color: $color-text-dark;
+        background-color: $color-background-dark;
+      }
+    }
+    &:active {
+      color: $color-text-dark;
+      background-color: $color-background-dark;
+    }
+  }
+
+  .play-btn {
+    color: $color-nav-btn-dark;
+    background-color: $color-game-btn;
+    &:hover {
+      // для декстопа будет ховер для мобилбного устройства нет
+      @media (hover: hover) {
+        color: $color-text-dark;
+        background-color: $color-nav-btn-dark;
+      }
+    }
+    &:active {
+      color: $color-text-dark;
+      background-color: $color-nav-btn-dark;
+    }
+  }
+
+  .score-table {
+    box-shadow: 0px 0px 10px 2px $color-border-dark;
+  }
+
+  .table-head {
+    background-color: $color-background-dark;
+  }
+
+  .table-head__header {
+    color: $color-text-dark;
+  }
+
+  .table-body__row:nth-child(2n) {
+    .table-body__cell {
+      background-color: $color-game-btn;
+    }
+  }
+
+  .footer {
+    background-color: $color-background-dark;
+    border-top: 3px solid $color-border-dark;
+  }
+  .footer-link {
+    color: $color-text-dark;
+  }
+}

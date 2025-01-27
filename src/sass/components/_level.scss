@@ -25,6 +25,12 @@
   cursor: pointer;
   transition: all $transition;
   &:hover {
+    // для декстопа будет ховер для мобилбного устройства нет
+    @media (hover: hover) {
+      background-color: $color-background-light;
+    }
+  }
+  &:active {
     background-color: $color-background-light;
   }
 }
@@ -94,7 +100,7 @@
 }
 
 .level-card__img-portrait {
-  background-image: url(./portrait.png);
+  background-image: url(/portrait.png);
 }
 
 .level-card__img-operator {

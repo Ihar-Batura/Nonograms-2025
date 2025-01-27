@@ -10,6 +10,8 @@
 @use 'layout/footer' as *;
 @use 'layout/select_level' as *;
 @use 'layout/score_table' as *;
+@use 'layout/winner_congratulation' as *;
+@use 'layout/dark_theme' as *;
 
 @use 'components/buttons' as *;
 @use 'components/navigation' as *;

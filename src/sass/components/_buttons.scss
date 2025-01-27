@@ -6,32 +6,26 @@
   border: none;
   cursor: pointer;
   transition: all $transition;
-
-  &:hover {
-    //color: $color-btn-hover;
-    //background-color: $color-btn-bg-hover;
-  }
-  &:active {
-    //color: $color-btn-click;
-    //background-color: $color-btn-bg-click;
-  }
 }
 
 .nav-btn {
   padding: 0;
-  color: $color-header-btn-light;
+  color: $color-nav-btn-light;
   background-color: transparent;
   border-radius: 0;
   border-bottom: 2px solid transparent;
   &.active {
-    border-bottom: 2px solid $color-header-btn-light;
+    border-bottom: 2px solid $color-nav-btn-light;
   }
   &:hover {
-    border-bottom: 2px solid $color-header-btn-light;
+    // для декстопа будет ховер для мобилбного устройства нет
+    @media (hover: hover) {
+      border-bottom: 2px solid $color-nav-btn-light;
+    }
   }
   &:active {
-    color: $color-header-btn-light-click;
-    border-bottom: 2px solid $color-header-btn-light-click;
+    color: $color-nav-btn-light-click;
+    border-bottom: 2px solid $color-nav-btn-light-click;
   }
 }
 
@@ -39,6 +33,13 @@
   width: 195px;
   background-color: $color-level-card-bk-light;
   &:hover {
+    // для декстопа будет ховер для мобилбного устройства нет
+    @media (hover: hover) {
+      background-color: $color-background-light;
+    }
+  }
+  &:active {
+    color: $color-nav-btn-light;
     background-color: $color-background-light;
   }
 }
@@ -50,7 +51,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: all $transition;
+  transition: all 0.1s ease;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

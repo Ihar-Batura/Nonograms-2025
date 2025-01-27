@@ -2,13 +2,24 @@
 $font-main: 'Libre Baskerville', serif;
 
 // Colors
+// Colors-light
 $color-background-light: #f7b680;
 $color-body-background-light: #efe5dd;
-$color-header-btn-light: #5d0606;
-$color-header-btn-light-click: #240202;
+$color-nav-btn-light: #5d0606;
+$color-nav-btn-light-click: #240202;
 $color-border-light: #8d1d06;
 $color-text: #242f47;
 $color-level-card-bk-light: #fed4b1;
+// Colors-dark
+$color-background-dark: #28325b;
+$color-main-text-dark: #273858;
+$color-main-background-dark: #e7d4d4;
+$color-nav-btn-dark: #08255a;
+$color-nav-btn-dark-click: #244584;
+$color-border-dark: #0d5649;
+$color-text-dark: #dae2f1;
+$color-level-card-bk-dark: #3755af;
+$color-game-btn: #697ebe;
 
 // Padding
 $padding-wrapper: 10px 20px;
