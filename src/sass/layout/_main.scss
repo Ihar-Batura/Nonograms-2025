@@ -8,3 +8,9 @@
 .main-content {
   width: 100%;
 }
+
+@media (width < 530px) {
+  .main {
+    min-height: calc(100dvh - 113px);
+  }
+}

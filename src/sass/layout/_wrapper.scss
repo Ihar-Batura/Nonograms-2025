@@ -24,4 +24,8 @@
   .main-wrapper {
     padding: $padding-wrapper-small;
   }
+
+  .main-wrapper {
+    min-height: calc(100dvh - 140px);
+  }
 }

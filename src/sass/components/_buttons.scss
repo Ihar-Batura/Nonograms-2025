@@ -45,8 +45,8 @@
 }
 
 .header-btns {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
   border: none;
   border-radius: 4px;
@@ -73,7 +73,7 @@
 
 @media (width < 450px) {
   .header-btns {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
   }
 }
