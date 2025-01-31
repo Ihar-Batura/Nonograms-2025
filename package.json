@@ -10,7 +10,7 @@
     "format": "npx prettier --write .",
     "ci:format": "npx prettier --check .",
     "lint": "npx eslint src/**/*.js",
-    "prepare": "husky"
+    "prepare": "husky && chmod ug+x .husky/*"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
