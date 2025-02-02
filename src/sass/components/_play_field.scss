@@ -25,11 +25,11 @@
   }
 
   &.hight-hint__cell-border__medium-cell:nth-child(5n + 6) {
-    border-left: none;
+    border-left: 1px solid black;
   }
 
   &.hight-hint__cell-border__end-cell {
-    border-right: 3px solid black;
+    border-right: 2px solid black;
     border-top: 3px solid black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
@@ -67,6 +67,7 @@
 .row-top {
   display: flex;
   justify-content: end;
+  border-right: 1px solid black;
 }
 
 .prompt {
