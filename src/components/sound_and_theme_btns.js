@@ -9,16 +9,20 @@ function createSoundAndThemeBtns() {
     classes: ['btns-container__sound-theme'],
   });
 
-  createButton({
+  const btnSound = createButton({
     classes: ['header-btns', 'btn-sound'],
     onClick: () => turnSound(),
     parent: btnsContainer,
   });
-  createButton({
+  btnSound.setAttribute('aria-label', 'turn off/on sound');
+
+  const btnTheme = createButton({
     classes: ['header-btns', 'btn-theme'],
     onClick: () => changeTheme(),
     parent: btnsContainer,
   });
+
+  btnTheme.setAttribute('aria-label', 'change theme');
 
   return btnsContainer;
 }
