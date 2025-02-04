@@ -1,7 +1,10 @@
 function getFiveBestResultsForTable() {
   const arrBestResults = JSON.parse(localStorage.getItem('NGResultsList'));
   if (arrBestResults !== null) {
-    let arrSortedResults = arrBestResults.sort(function (a, b) {
+    let fiveLastResults =
+      arrBestResults.length < 6 ? arrBestResults : arrBestResults.slice(-5);
+
+    let arrSortedResults = fiveLastResults.sort(function (a, b) {
       if (a.result > b.result) {
         return 1;
       }
