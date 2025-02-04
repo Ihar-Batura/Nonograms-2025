@@ -9,10 +9,9 @@ function showWinCongratulation() {
   const gameName = nonograms[gameId - 1].name;
   const timerMinutes = document.querySelector('.timer-minutes').textContent;
   const timerSeconds = document.querySelector('.timer-seconds').textContent;
-  const time = `${timerMinutes}:${timerSeconds}`;
 
   cleanMainContent();
-  createWinMessage(gameId, gameName, time);
+  createWinMessage(gameId, gameName, timerMinutes, timerSeconds);
   playSoundWin();
 }
 

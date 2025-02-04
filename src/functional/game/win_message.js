@@ -2,7 +2,7 @@ import createElement from '../create/create_element';
 import createButton from '../create/create_button';
 import goToPlayPage from '../change_page/go_to_play_page';
 
-function createWinMessage(id, name, time) {
+function createWinMessage(id, name, timerMinutes, timerSeconds) {
   const mainContentContainer = document.querySelector('.main-content');
 
   const winMessageContainer = createElement({
@@ -14,7 +14,7 @@ function createWinMessage(id, name, time) {
   createElement({
     tag: 'h2',
     classes: ['win-message__container-text'],
-    text: `"Great! You have solved the nonogram in ${time} seconds!"`,
+    text: `"Great! You have solved the nonogram in ${timerMinutes * 60 + +timerSeconds} seconds!"`,
     parent: winMessageContainer,
   });
 
