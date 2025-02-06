@@ -38,7 +38,8 @@ function startTimer(startMinutes = 0, startSeconds = 0) {
   const timerStart = document.querySelectorAll('.cell');
 
   // Запускает таймер
-  timerStart.forEach((cell) =>
+  timerStart.forEach((cell) => {
+    // старт таймера при клике на левую кнопку мышки
     cell.addEventListener('click', function () {
       if (!flagTimer) {
         // не затормаживает таймер при повторном клике
@@ -49,8 +50,21 @@ function startTimer(startMinutes = 0, startSeconds = 0) {
           flagTimer = true;
         }
       }
-    })
-  );
+    });
+
+    // старт таймера при клике на правую кнопку мышки
+    cell.addEventListener('contextmenu', function () {
+      if (!flagTimer) {
+        // не затормаживает таймер при повторном клике
+        // проверка на показынное решение что бы устранить баг
+        if (!cell.classList.value.includes('solution')) {
+          clearInterval(interval); //не дает ускоряться интервалу!
+          interval = setInterval(startTime, 1000);
+          flagTimer = true;
+        }
+      }
+    });
+  });
 
   //Останавливает таймер
   timerStop.addEventListener('click', function () {
